@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react'
 import {useDispatch} from 'react-redux'
-import config from './config/config';
 import authService from './appwrite/auth';
-import './App.css'
 import { Header, Footer} from './components/index'
 import { Outlet } from 'react-router-dom';
 import { login } from './store/authSlice';
@@ -39,7 +37,7 @@ return !loading ? (
       <Header />
 
       <main>
-       TODO:  {/* <Outlet /> */}
+       <Outlet />
       </main>
       <Footer />
 
